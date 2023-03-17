@@ -1,6 +1,7 @@
 package co.com.alura.model;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.util.PrimitiveIterator;
 
@@ -43,7 +44,7 @@ public class Curso{
     }
 
     public List<Clase> getClaseList() {
-        return claseList;
+        return Collections.unmodifiableList(claseList);
     }
 
     public void setClaseList(List<Clase> claseList) {
